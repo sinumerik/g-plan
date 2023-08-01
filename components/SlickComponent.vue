@@ -15,7 +15,7 @@
     <VueSlickCarousel v-bind="settings">
       <div class="results-slide" v-for="slide in results" :key="slide.id">
         <video width="268" height="268" controls preload>
-          <source src="~/assets/images/results/sample.mp4" type="video/mp4" />
+          <!-- <source src="~/assets/images/results/sample.mp4" type="video/mp4" /> -->
         </video>
         <div v-if="slide.showPlay" class="results-slide__info">
           <span class="results-slide__name">{{ slide.name }}</span>
