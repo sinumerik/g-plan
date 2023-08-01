@@ -103,7 +103,8 @@
             position: absolute;
             top: -30px;
             left: 56px;
-        }
+            animation: firework-move 5s linear infinite;
+            z-index: -1;        }
     }
 
     &-date {
@@ -186,5 +187,36 @@
                 transform: translateY(-7px);
             }
         }
+    }
+}
+
+@keyframes firework-move {
+    0% {
+        top: -30px;
+        left: 55px;
+        transform: scale(1);
+    }
+    20% {
+        top: -35px;
+        left: 50px;
+    }
+    40% {
+        top: -30px;
+        left: 55px;
+        transform: scale(0.9);
+    }
+    60% {
+        top: -25px;
+        left: 60px;
+    }
+    80% {
+        top: -24px;
+        transform: scale(1.1);
+    }
+    100% {
+        top: -30px;
+        left: 55px;
+        transform: scale(1);
+
     }
 }

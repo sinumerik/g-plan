@@ -368,6 +368,8 @@
       </div>
     </div>
 
+    <slick-component></slick-component>
+
     <div class="reviews">
       <div class="container">
         <div class="reviews-item">
@@ -643,12 +645,16 @@
 import AccordionComponentVue from "../components/AccordionComponent.vue";
 import BestOffersComponentVue from "../components/BestOffersComponent.vue";
 import CounterComponentVue from "../components/CounterComponent.vue";
+import SlickComponentVue from '../components/SlickComponent.vue';
+
+
 
 export default {
   components: {
     CounterComponentVue,
     BestOffersComponentVue,
-    AccordionComponentVue
+    AccordionComponentVue,
+    SlickComponentVue
   },
 };
 </script>

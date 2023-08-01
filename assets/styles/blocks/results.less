@@ -1,5 +1,6 @@
 .results {
     padding-top: 20px;
+    padding-bottom: 50px;
 
     &-wrap {
         display: flex;
@@ -26,32 +27,97 @@
         margin-bottom: 20px;
     }
 
-    .swiper {
-        padding-bottom: 39px;
-    }
+    &-slide {
+        position: relative;
+        max-width: 268px;
+        max-height: 268px;
 
-    .swiper-pagination-bullet {
-        width: 9px;
-        height: 9px;
-        background: #B18FFF;
+        &__info {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            min-height: 134px;
+            width: 100%;
+            background: linear-gradient(0deg, #0A0021 0%, rgba(10, 0, 33, 0.00) 100%);
+        }
 
-        &-active {
-            background: #fff;
+        &__name {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        &__text {
+            font-size: 14px;
+        }
+
+        &__play {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 50px;
+            height: 50px;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+            z-index: 2;
+            background-image: url("~/assets/images/results/play.png");
         }
     }
 
-    &-slider {
-        position: relative;
+    .slick {
+        &-slide {
+            // max-width: 268px;
+            // max-height: 268px;
+            margin: 0 7.5px;
+        }
+
+        &-dots {
+            li {
+                max-width: 9px;
+                max-height: 9px;
+                border-radius: 50%;
+                background: #B18FFF;
+                margin: 0 3.5px;
+        
+                &.slick-active {
+                    background: #fff;
+                }
+            }
+        }
     }
+
+    // .swiper {
+    //     padding-bottom: 39px;
+    // }
+
+    // .swiper-pagination-bullet {
+    //     width: 9px;
+    //     height: 9px;
+    //     background: #B18FFF;
+
+    //     &-active {
+    //         background: #fff;
+    //     }
+    // }
+
+    // &-slider {
+    //     position: relative;
+    // }
     
 
-    &-slide {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-width: 268px;
-        max-width: 268px;
-        min-height: 268px;
-        max-height: 268px;
-    }
+    // &-slide {
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: center;
+    //     min-width: 268px;
+    //     max-width: 268px;
+    //     min-height: 268px;
+    //     max-height: 268px;
+    // }
 }
